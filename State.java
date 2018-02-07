@@ -8,7 +8,7 @@ public class State {
 		super(resources money, resources food, resources oil, resources electricity);
 	}
 	
-	public int spent(resources money, resources food, resources oil, resources electricity) {
+	public int spentUnit(resources money, resources food, resources oil, resources electricity) {
 		if (/*Unit buying*/) {
 			this.money=money-/*Unit price*/;
 		}
@@ -21,6 +21,13 @@ public class State {
 		if (/*Unit buying*/) {
 			this.electricity=electricité-/*Unit price*/;
 		}
+	}
+	
+	public int spentLap(resources money, resources food, resources oil, resources electricity) {
+		this.money=money-/*Cost Unit*/;
+		this.food=food-/*Cost Unit*/;
+		this.oil=oil-/*Cost Unit*/;
+		this.electricity=electricity-/*Cost Unit*/;
 	}
 	
 	public int gainMoney(resources money) {
